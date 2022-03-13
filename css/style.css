@@ -17,7 +17,7 @@
     border-top: none;
     border-bottom: none;
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 768px) {
     .div-principale {
       width: 100%;
       left: auto;
@@ -27,8 +27,6 @@
     .logo-img{
         width: 100%;
     }
-
-
   }
 .menu{
     border: solid 0.1px black;
