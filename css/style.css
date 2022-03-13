@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap');
+.logo-img{
+    width: 50%;
+    height: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.div-principale{
+    width: 50%;
+    height: 100%;
+    background: rgb(255,102,0);
+    position: absolute;
+    left: 50%;
+    margin-left: -25%;
+    border: solid 0.1px black;
+    border-top: none;
+    border-bottom: none;
+}
+.menu{
+    border: solid 0.1px black;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    padding-top: 5px;
+    text-align: center;
+    width: 100%;
+}
+.menu-args li{
+    text-align: center;
+    font-size: large;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    text-align: center;
+    list-style: none;
+    display: inline;
+}
+.menu-args a{
+    text-decoration: none;
+    font-size: medium;
+    color: black;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    transition: .3s;
+    font-size: x-large;
+    font-style: bold;
+    font-family: 'Smooch Sans', sans-serif;
+}
+.menu-args a::after {
+    position: absolute;
+    bottom: .3em;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 1px;
+    background-color:white;
+    opacity: 0;
+    transition: .3s;
+    }
+.menu-args a:hover::after {
+    bottom: 0;
+    opacity: 1;
+    }
+.menu-args a:hover {
+    color:white;
+    }
+.footer{
+    position: absolute;
+    font-size: 12px;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    line-height: 60px;
+    font-size: 14px;
+    color: #000000;
+    text-align: center;
+    border: solid .1px #000000;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+}
+.footer a{
+    color: #000000;
+}
+.footer a:hover {
+      text-decoration: none;
+      color: white;
+      border-bottom: 1px solid;
+      border-bottom: 1px transparent;
+      transition: .5s;
+}
+.footer svg:hover{
+      color: white;
+      transition: .5s;
+}
+.orange-bk{
+    background-color: rgb(136, 60, 9);
+}
