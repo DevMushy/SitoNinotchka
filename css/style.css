@@ -1,37 +1,51 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap');
 .logo-img{
-    width: 50%;
-    height: 10%;
+    width: 20%;
+    height: 5%;
+}
+.div-principale{
+    width: 100%;
+    height: 100%;
+    background: rgb(255,102,0);
+}
+.header{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: .5rem;
+    text-align: center;
 }
-.div-principale{
-    width: 50%;
-    height: 100%;
-    background: rgb(255,102,0);
-    position: absolute;
-    left: 50%;
-    margin-left: -25%;
-    border: solid 0.1px black;
-    border-top: none;
-    border-bottom: none;
-}
+@media screen and (max-width: 768px) {
+    .div-principale {
+      width: 100%;
+      left: auto;
+      right: auto;
+      margin-left: auto;
+    }
+    .logo-img{
+        width: 50%;
+    }
+  }
 .menu{
     border: solid 0.1px black;
     border-left: none;
     border-right: none;
     border-top: none;
     padding-top: 5px;
-    text-align: center;
+    display: block;
+    margin: auto;
     width: 100%;
 }
 .menu-args li{
-    text-align: center;
     font-size: large;
     padding-bottom: 2px;
     padding-right: 10px;
-    text-align: center;
     list-style: none;
     display: inline;
 }
@@ -39,7 +53,6 @@
     text-decoration: none;
     font-size: medium;
     color: black;
-    text-align: center;
     position: relative;
     display: inline-block;
     transition: .3s;
@@ -66,7 +79,7 @@
     color:white;
     }
 .footer{
-    position: absolute;
+    position: relative;
     font-size: 12px;
     bottom: 0;
     width: 100%;
@@ -89,6 +102,11 @@
       border-bottom: 1px solid;
       border-bottom: 1px transparent;
       transition: .5s;
+}
+
+.footer a:hover::after{
+color: #000000;
+
 }
 .footer svg:hover{
       color: white;
