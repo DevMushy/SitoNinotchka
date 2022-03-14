@@ -1,53 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@300&display=swap');
-.logo-img{
-    width: 20%;
-    height: 5%;
-}
 .div-principale{
     width: 100%;
     height: 100%;
     background: rgb(255,102,0);
 }
-.header{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 9999;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: .5rem;
-    text-align: center;
+.logo-img{
+    width: 50%;
 }
-@media screen and (max-width: 768px) {
-    .div-principale {
-      width: 100%;
-      left: auto;
-      right: auto;
-      margin-left: auto;
-    }
-    .logo-img{
-        width: 50%;
-    }
-  }
 .menu{
     border: solid 0.1px black;
     border-left: none;
     border-right: none;
     border-top: none;
     padding-top: 5px;
+    padding-bottom: 5px;
     display: block;
     margin: auto;
     width: 100%;
+    text-align: center;
 }
-.menu-args li{
+.menu-args span{
     font-size: large;
-    padding-bottom: 2px;
     padding-right: 10px;
-    list-style: none;
-    display: inline;
+    text-align: center;
+}
+.menu-args img{
+    width: 20%;
 }
 .menu-args a{
     text-decoration: none;
@@ -78,12 +56,31 @@
 .menu-args a:hover {
     color:white;
     }
+.services{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: solid .1px black;
+    border-left: none;
+    border-right: none;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+    text-align: center;
+    color: #000000;
+} 
+.services p{
+    padding-top: 2rem;
+}
+.services a{
+    color: #000000;
+}   
+.services a:hover{
+    color: white;
+    transition: .5s;
+}
 .footer{
     position: relative;
     font-size: 12px;
     bottom: 0;
-    width: 100%;
-    height: auto;
     line-height: 60px;
     font-size: 14px;
     color: #000000;
@@ -103,11 +100,6 @@
       border-bottom: 1px transparent;
       transition: .5s;
 }
-
-.footer a:hover::after{
-color: #000000;
-
-}
 .footer svg:hover{
       color: white;
       transition: .5s;
@@ -115,3 +107,14 @@ color: #000000;
 .orange-bk{
     background-color: rgb(136, 60, 9);
 }
+@media screen and (max-width: 768px) {
+    .div-principale {
+      width: 100%;
+      left: auto;
+      right: auto;
+      margin-left: auto;
+    }
+    .menu-args img{
+        width: 50%;
+    }
+  }
