@@ -77,6 +77,13 @@
     color: white;
     transition: .5s;
 }
+.brand-grid{
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+.brand-grid img{
+    padding-bottom: 5px;
+}
 .footer{
     position: relative;
     font-size: 12px;
